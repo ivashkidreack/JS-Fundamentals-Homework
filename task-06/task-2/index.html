@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I`m a big header!!!</h1>
+    <div id="myDiv">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+        <p>Fourth paragraph</p>
+    </div>
+    <ul id="myList">
+        <li>Make</li>
+        <li>me</li>
+        <li>horisontal!</li>
+    </ul>
+    <span>Make me invisible, please!</span>
+    <script>
+
+        const header = document.querySelector("h1");
+        const div = document.getElementById("myDiv");
+        const firstElemDiv = div.firstElementChild;
+        const lastElemDiv = div.lastElementChild;
+
+        header.style.backgroundColor = "lightgreen";
+        firstElemDiv.style.fontWeight = "bold";
+        firstElemDiv.nextElementSibling.style.color = "red";
+        lastElemDiv.previousElementSibling.style.textDecoration = "underline";
+        lastElemDiv.style.fontStyle = "italic";
+
+        const list = document.getElementById("myList");
+        list.style.listStyle = "none";
+        list.style.display = "flex";
+
+        const span = document.querySelector("span");
+        span.style.color = "white";
+    </script>
+</body>
+</html>
